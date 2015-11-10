@@ -1,0 +1,16 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Websocket Demo Application</title>
+</head>
+<body>
+    <script type="text/javascript" charset="utf-8">
+        var CONN = new WebSocket("ws://localhost:9217/websocket")
+        CONN.onopen = function(event) {
+            CONN.send("TEST");
+            CONN.send("TEST");
+            CONN.send("TEST");
+        }
+    </script>
+</body>
+</html>
